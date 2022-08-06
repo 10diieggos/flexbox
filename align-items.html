@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>align-items</title>
+  <style>
+    .flex-container-row{
+      display:flex;
+      background-color: black;
+      max-width: 350px;
+    }
+    .flex-item-row{
+      background-color: blueviolet;
+      margin: 10px;
+      color: white;
+      text-align: center;
+      line-height: 50px;
+      font-weight: bolder;
+      font-size: 1rem;
+      flex: 1;
+    }
+    .flex-container-column{
+      display:flex;
+      background-color: black;
+      max-width: 350px;
+    }
+    .flex-item-column{
+      background-color: blueviolet;
+      margin: 10px;
+      color: white;
+      text-align: center;
+      line-height: 50px;
+      font-weight: bolder;
+      font-size: 1rem;
+      flex: 1;
+    }
+    .center{
+      align-items: center;
+    }
+    .stretch{
+      align-items: stretch;
+    }
+    .flex-start{
+      align-items: flex-start;
+    }
+    .flex-end{
+      align-items: flex-end;
+    }
+    .baseline{
+      align-items: baseline;
+      
+    }
+    .column{
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <h1>ROW DIRECTION</h1>
+  <h2>1) align-items: center;</h2>
+  <section class="flex-container-row center">
+    <div class="flex-item-row">item 1</div>
+    <div class="flex-item-row">Lorem ipsum dolor sit amet</div>
+    <div class="flex-item-row">item 3</div>
+  </section>
+  <h2>2) align-items: stretch;</h2>
+  <section class="flex-container-row stretch">
+    <div class="flex-item-row">item 1</div>
+    <div class="flex-item-row">Lorem ipsum dolor sit amet</div>
+    <div class="flex-item-row">item 3</div>
+  </section>
+  <h2>3) align-items: flex-start;</h2>
+  <section class="flex-container-row flex-start">
+    <div class="flex-item-row">item 1</div>
+    <div class="flex-item-row">Lorem ipsum dolor sit amet</div>
+    <div class="flex-item-row">item 3</div>
+  </section>
+  <h2>4) align-items: flex-end;</h2>
+  <section class="flex-container-row flex-end">
+    <div class="flex-item-row">item 1</div>
+    <div class="flex-item-row">Lorem ipsum dolor sit amet</div>
+    <div class="flex-item-row">item 3</div>
+  </section>
+  <h2>5) align-items: baseline;</h2>
+  <section class="flex-container-row baseline">
+    <div class="flex-item-row">item 1</div>
+    <div class="flex-item-row">Lorem ipsum dolor sit amet</div>
+    <div class="flex-item-row">item 3</div>
+  </section>
+  <h1>COLUMN DIRECTION</h1>
+  <h2>1) align-items: center; <i>(column)</i></h2>
+  <section class="flex-container-column center column">
+    <div class="flex-item-column">item 1</div>
+    <div class="flex-item-column">Lorem ipsum dolor sit amet</div>
+    <div class="flex-item-column">item 3</div>
+  </section>
+  <h2>2) align-items: stretch <i>(column)</i>;</h2>
+  <section class="flex-container-column stretch column">
+    <div class="flex-item-column">item 1</div>
+    <div class="flex-item-column">Lorem ipsum dolor sit amet</div>
+    <div class="flex-item-column">item 3</div>
+  </section>
+  <h2>3) align-items: flex-start; <i>(column)</i>;</h2>
+  <section class="flex-container-column flex-start column">
+    <div class="flex-item-column">item 1</div>
+    <div class="flex-item-column">Lorem ipsum dolor sit amet</div>
+    <div class="flex-item-column">item 3</div>
+  </section>
+  <h2>4) align-items: flex-end; <i>(column)</i></h2>
+  <section class="flex-container-column flex-end column">
+    <div class="flex-item-column">item 1</div>
+    <div class="flex-item-column">Lorem ipsum dolor sit amet</div>
+    <div class="flex-item-column">item 3</div>
+  </section>
+  <h2>5) align-items: baseline; <i>(column)</i></h2>
+  <section class="flex-container-column baseline column">
+    <div class="flex-item-column">item 1</div>
+    <div class="flex-item-column">Lorem ipsum dolor sit amet</div>
+    <div class="flex-item-column">item 3</div>
+  </section>
+</body>
+</html>
