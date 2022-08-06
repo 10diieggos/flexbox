@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>align-content</title>
+  <style>
+    .flex-container{
+      display: flex;
+      background-color: black;
+      max-width: 40vw;
+      height: 50vh;
+      flex-wrap: wrap;
+    }
+    .flex-item{
+      background-color: blueviolet;
+      margin: 3px;
+      min-height: 5vh;
+      max-width: 10vw;
+      color: white;
+    }
+
+    .stretch{
+      align-content: stretch;
+    }
+    .center{
+      align-content: center;
+    }
+    .flex-start{
+      align-content: flex-start;
+    }
+    .flex-end{
+      align-content: flex-end;
+    }
+    .space-between{
+      align-content: space-between;
+    }
+    .space-around{
+      align-content: space-around;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>1) align-content: stretch; <i>(default)</i></h1>
+  <div class="flex-container stretch">
+    <div class="flex-item">item 1</div>
+    <div class="flex-item">item 2</div>
+    <div class="flex-item">Lorem ipsum dolor sit amet consectetur </div>
+    <div class="flex-item">item 4</div>
+    <div class="flex-item">item 5</div>
+    <div class="flex-item">item 6</div>
+    <div class="flex-item">item 7</div>
+    <div class="flex-item">Lorem ipsum dolor sit amet consectetur </div>
+    <div class="flex-item">item 4</div>
+    <div class="flex-item">item 5</div>
+    <div class="flex-item">item 6</div>
+    <div class="flex-item">item 7</div>
+  </div>
+  <h1>2) align-content: flex-start;</h1>
+  <div class="flex-container flex-start">
+    <div class="flex-item">item 1</div>
+    <div class="flex-item">item 2</div>
+    <div class="flex-item">Lorem ipsum dolor sit amet consectetur </div>
+    <div class="flex-item">item 4</div>
+    <div class="flex-item">item 5</div>
+    <div class="flex-item">item 6</div>
+    <div class="flex-item">item 7</div>
+    <div class="flex-item">Lorem ipsum dolor sit amet consectetur </div>
+    <div class="flex-item">item 4</div>
+    <div class="flex-item">item 5</div>
+    <div class="flex-item">item 6</div>
+    <div class="flex-item">item 7</div>
+  </div>
+  <h1>3) align-content: center;</h1>
+  <div class="flex-container center">
+    <div class="flex-item">item 1</div>
+    <div class="flex-item">item 2</div>
+    <div class="flex-item">Lorem ipsum dolor sit amet consectetur </div>
+    <div class="flex-item">item 4</div>
+    <div class="flex-item">item 5</div>
+    <div class="flex-item">item 6</div>
+    <div class="flex-item">item 7</div>
+    <div class="flex-item">Lorem ipsum dolor sit amet consectetur </div>
+    <div class="flex-item">item 4</div>
+    <div class="flex-item">item 5</div>
+    <div class="flex-item">item 6</div>
+    <div class="flex-item">item 7</div>
+  </div>
+  <h1>4) align-content: flex-end;</h1>
+  <div class="flex-container flex-end">
+    <div class="flex-item">item 1</div>
+    <div class="flex-item">item 2</div>
+    <div class="flex-item">Lorem ipsum dolor sit amet consectetur </div>
+    <div class="flex-item">item 4</div>
+    <div class="flex-item">item 5</div>
+    <div class="flex-item">item 6</div>
+    <div class="flex-item">item 7</div>
+    <div class="flex-item">Lorem ipsum dolor sit amet consectetur </div>
+    <div class="flex-item">item 4</div>
+    <div class="flex-item">item 5</div>
+    <div class="flex-item">item 6</div>
+    <div class="flex-item">item 7</div>
+  </div>
+  <h1>5) align-content: space-between</h1>
+  <div class="flex-container space-between">
+    <div class="flex-item">item 1</div>
+    <div class="flex-item">item 2</div>
+    <div class="flex-item">Lorem ipsum dolor sit amet consectetur </div>
+    <div class="flex-item">item 4</div>
+    <div class="flex-item">item 5</div>
+    <div class="flex-item">item 6</div>
+    <div class="flex-item">item 7</div>
+    <div class="flex-item">Lorem ipsum dolor sit amet consectetur </div>
+    <div class="flex-item">item 4</div>
+    <div class="flex-item">item 5</div>
+    <div class="flex-item">item 6</div>
+    <div class="flex-item">item 7</div>
+    <div class="flex-item">item 1</div>
+    <div class="flex-item">item 2</div>
+    <div class="flex-item">Lorem ipsum dolor sit amet consectetur </div>
+    <div class="flex-item">item 4</div>
+    <div class="flex-item">item 5</div>
+    <div class="flex-item">item 6</div>
+    <div class="flex-item">item 7</div>
+    <div class="flex-item">Lorem ipsum dolor sit amet consectetur </div>
+    <div class="flex-item">item 4</div>
+    <div class="flex-item">item 5</div>
+    <div class="flex-item">item 6</div>
+    <div class="flex-item">item 7</div>
+  </div>
+  <h1>5) align-content: space-around</h1>
+  <div class="flex-container space-around">
+    <div class="flex-item">item 1</div>
+    <div class="flex-item">item 2</div>
+    <div class="flex-item">Lorem ipsum dolor sit amet consectetur </div>
+    <div class="flex-item">item 4</div>
+    <div class="flex-item">item 5</div>
+    <div class="flex-item">item 6</div>
+    <div class="flex-item">item 7</div>
+    <div class="flex-item">Lorem ipsum dolor sit amet consectetur </div>
+    <div class="flex-item">item 4</div>
+    <div class="flex-item">item 5</div>
+    <div class="flex-item">item 6</div>
+    <div class="flex-item">item 7</div>
+    <div class="flex-item">item 1</div>
+    <div class="flex-item">item 2</div>
+    <div class="flex-item">Lorem ipsum dolor sit amet consectetur </div>
+    <div class="flex-item">item 4</div>
+    <div class="flex-item">item 5</div>
+    <div class="flex-item">item 6</div>
+    <div class="flex-item">item 7</div>
+    <div class="flex-item">Lorem ipsum dolor sit amet consectetur </div>
+    <div class="flex-item">item 4</div>
+    <div class="flex-item">item 5</div>
+    <div class="flex-item">item 6</div>
+    <div class="flex-item">item 7</div>
+  </div>
+</body>
+</html>
