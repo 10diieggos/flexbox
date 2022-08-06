@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex-grow</title>
+  <style>
+    .flex-container {
+      display: flex;
+      background-color: black;
+      max-width: 40vw;
+      justify-content: center;
+    }
+    .flex-item{
+      background-color: blueviolet;
+      margin: 3px;
+      height: 5vh;
+      color: white;
+      text-align: center;
+    }
+    .flex-grow-0{
+      flex-grow: 0;
+    }
+    .flex-grow-1{
+      flex-grow: 1;
+    }
+    .flex-grow-2{
+      flex-grow: 2;
+    }
+    .flex-grow-3{
+      flex-grow: 3;
+    }
+    .flex-grow-4{
+      flex-grow: 4;
+    }
+  </style>
+</head>
+<body>
+  <h2>1) flex-grow: 0; <i>(default)</i></h2>
+  <div class="flex-container">
+    <div class="flex-item flex-grow-0">item 1</div>
+    <div class="flex-item">item 2</div>
+    <div class="flex-item">item 3</div>
+    <div class="flex-item">item 4</div>
+  </div>
+  <h2>2) flex-grow: 1; <i>(justify-content perde o efeito)</i></h2>
+  <div class="flex-container">
+    <div class="flex-item flex-grow-1">item 1</div>
+    <div class="flex-item">item 2</div>
+    <div class="flex-item">item 3</div>
+    <div class="flex-item">item 4</div>
+  </div>
+  <h2>3) flex-grow: 2; <i>(justify-content perde o efeito)</i></h2>
+  <div class="flex-container">
+    <div class="flex-item flex-grow-1">item 1</div>
+    <div class="flex-item flex-grow-2">item 2</div>
+    <div class="flex-item">item 3</div>
+    <div class="flex-item">item 4</div>
+  </div>
+  <h2>4) flex-grow: 3; <i>(justify-content perde o efeito)</i></h2>
+  <div class="flex-container">
+    <div class="flex-item flex-grow-1">item 1</div>
+    <div class="flex-item flex-grow-2">item 2</div>
+    <div class="flex-item flex-grow-3">item 3</div>
+    <div class="flex-item">item 4</div>
+  </div>
+  <h2>5) flex-grow: 4; <i>(justify-content perde o efeito)</i></h2>
+  <div class="flex-container">
+    <div class="flex-item flex-grow-1">item 1</div>
+    <div class="flex-item flex-grow-2">item 2</div>
+    <div class="flex-item flex-grow-3">item 3</div>
+    <div class="flex-item flex-grow-4">item 4</div>
+  </div>
+</body>
+</html>
