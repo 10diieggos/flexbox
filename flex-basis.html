@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex-basis</title>
+  <style>
+    .flex-container {
+      display: flex;
+      background-color: black;
+      max-width: 70vw;
+    }
+    .flex-item{
+      background-color: blueviolet;
+      margin: 5px;
+      height: 5vh;
+      color: white;
+      font-weight: bolder;
+      font-size: larger;
+      text-align: center;
+    }
+    .auto{
+      flex-basis: auto;
+    }
+
+    .zero{
+      flex-basis: 0;
+    }
+    .flex-grow-1{
+      flex-grow: 1;
+    }
+    
+  </style>
+</head>
+<body>
+  <h2>1) flex-basis: auto</h2>
+  <div class="flex-container">
+    <div class="flex-item auto flex-grow-1">Um item</div>
+    <div class="flex-item auto flex-grow-1">Outro</div>
+    <div class="flex-item auto flex-grow-1">Um item Maior</div>
+    <div class="flex-item auto flex-grow-1">Outro item maior ainda</div>
+  </div>
+  <h2>1) flex-basis: zero</h2>
+  <div class="flex-container">
+    <div class="flex-item flex-grow-1 zero">Um item</div>
+    <div class="flex-item flex-grow-1 zero">Outro</div>
+    <div class="flex-item flex-grow-1 zero">Um item Maior</div>
+    <div class="flex-item flex-grow-1 zero">Outro item maior ainda</div>
+  </div>
+</body>
+</html>
