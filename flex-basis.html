@@ -27,6 +27,9 @@
     .zero{
       flex-basis: 0;
     }
+    .width-30px{
+      flex-basis: 30px;
+    }
     .flex-grow-1{
       flex-grow: 1;
     }
@@ -41,12 +44,26 @@
     <div class="flex-item auto flex-grow-1">Um item Maior</div>
     <div class="flex-item auto flex-grow-1">Outro item maior ainda</div>
   </div>
-  <h2>1) flex-basis: zero</h2>
+  <h2>2) flex-basis: zero</h2>
   <div class="flex-container">
     <div class="flex-item flex-grow-1 zero">Um item</div>
     <div class="flex-item flex-grow-1 zero">Outro</div>
     <div class="flex-item flex-grow-1 zero">Um item Maior</div>
     <div class="flex-item flex-grow-1 zero">Outro item maior ainda</div>
+  </div>
+  <h2>3) auto x zero</h2>
+  <div class="flex-container">
+    <div class="flex-item flex-grow-1 auto">0123456789</div>
+    <div class="flex-item flex-grow-1 zero">0123456789</div>
+    <div class="flex-item flex-grow-1 zero">0123456789</div>
+    <div class="flex-item flex-grow-1 zero">0123456789</div>
+  </div>
+  <h2>4) auto x zero</h2>
+  <div class="flex-container">
+    <div class="flex-item flex-grow-1 auto">0123456789</div>
+    <div class="flex-item flex-grow-1 zero">0123456789</div>
+    <div class="flex-item flex-grow-1 zero">0123456789</div>
+    <div class="flex-item flex-grow-1 width-30px">0123456789</div>
   </div>
 </body>
 </html>

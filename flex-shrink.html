@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex-shrink</title>
+  <style>
+    .flex-container{
+      display: flex;
+      background-color: black;
+      max-width: 400px;
+    }
+    .flex-item{
+      color: white;
+      font-weight: bolder;
+      font-size: 20px;
+      text-align: center;
+      background-color: blueviolet;
+      margin: 7px;
+    }
+    .grow-1{
+      flex-grow: 1;
+    }
+    .shrink-1{
+      flex-shrink: 1;
+    }
+    .shrink-0{
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <h2>flex-shrink: 1; <i>(default)</i> </h2>
+  <div class="flex-container">
+    <div class="flex-item grow-1 shrink-1">ITEM</div>
+    <div class="flex-item grow-1 shrink-1">ITEM MUITO GRANGE</div>
+    <div class="flex-item grow-1 shrink-1">ITEM MAIOR</div>
+  </div>
+  <h2> flex-shrink: 0;</h2>
+  <div class="flex-container">
+    <div class="flex-item grow-1 shrink-0">ITEM</div>
+    <div class="flex-item grow-1 shrink-0">ITEM MUITO GRANDE</div>
+    <div class="flex-item grow-1 shrink-0">ITEM MAIOR</div>
+  </div>
+  
+</body>
+</html>
