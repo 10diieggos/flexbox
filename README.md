@@ -97,3 +97,39 @@ order: número;
 order: 0;
 /* 0 é o valor padrão e isso significa que a ordem dos itens será a ordem apresentada no HTML. Se você quiser colocar um item do meio da lista no início da mesma, sem modificar os demais, o ideal é utilizar um valor negativo para este item, já que todos os outros são 0. */
 ```
+
+### align-self
+
+O align-self define o alinhamento específico de um único flex item dentro do flex container. Esta propriedade se impõe ao align-items do flex container.
+
+O alinhamento acontece tanto em linha quanto em colunas. Por exemplo o flex-start quando os itens estão em linhas, alinha o item ao topo da sua linha. Quando em colunas, alinha o item ao início (esquerda) da coluna.
+
+```css
+align-self: auto;
+/* Valor inicial padrão. Vai respeitar o que for definido pelo align-items no flex-container. */
+```
+
+```css
+align-self: flex-start;
+/* Alinha o item ao início. */
+```
+
+```css
+align-self: flex-end;
+/* Alinha o item ao final. */
+```
+
+```css
+align-self: center;
+/* Alinha o item ao center. */
+```
+
+```css
+align-self: baseline;
+/* Alinha o item a linha de base. */
+```
+
+```css
+align-self: stretch;
+/* Estica o item. */
+```
