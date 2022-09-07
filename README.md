@@ -1,6 +1,8 @@
 
 # CSS FLEXBOX
 
+DEMO DO PROJETO FINAL: https://tranquil-crawling-increase.glitch.me/
+
 Criei este repositório para guardar minhas anotações e arquivos de práticas que produzi durante o curso **Posicionando elementos com Flexbox em CSS** Ministrado por Karen Santos e disponível na plataforma da [Digital Inovation One](https:
 web.dio.me/ "DIO")
 
